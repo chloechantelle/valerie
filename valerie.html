@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta name="author" content="Chloe">
+<title>V a l e r i e</title>
+<link rel="shortcut icon" href="img/peach.png" type="image/ico">
+<link rel="stylesheet" type="text/css" href="css/Valerie.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+</head>
+<body>
+
+<div id="cover">
+
+<div id="play">
+<audio id="music" src="mp3/Zone.mp3" preload="auto">
+</audio>
+<a onClick="togglePlay()"><img alt="Play/Pause" id="changeimg" onClick="change()" src="img/music.png"></a>
+</div>
+
+<div id="title"><a href="#search">
+
+<!-- val<p>er</p>ie -->
+
+<div class="greeting"></div>
+
+</div> 
+
+<form class="search" method="get" action="https://google.com/search?q=">
+<input class="searchbox" name="q" title="Search Google" placeholder="بحث">
+</form>
+  
+<div id="arrow"> 
+<a href="#next"><img src="img/arrow.png" title="Secrets?"></a>
+</div>      <!-- close arrow -->
+
+</div>	<!-- close cover -->
+
+
+				<!-- content -->
+
+<div id="next">
+
+		<!-- top row -->
+<a target="_blank" href="https://twitter.com" class="square">Tweeter</a>
+
+<a target="_blank" href="https://www.youtube.com/feed/subscriptions" class="square">YT Feed</a>
+
+<a target="_blank" href="https://www.youtube.com/playlist?list=WL" class="square">WL</a>
+
+<a target="_blank" href="https://github.com" class="square">Github</a>
+
+<a target="_blank" href="https://userstyles.org/users/268662" class="square">Userstyles</a>
+
+<a target="_blank" href="http://inbox.google.com" class="square">Inbox</a>
+
+<a target="_blank" href="http://ayymoko.deviantart.com" class="square">DA</a>
+
+<a target="_blank" href="https://soundcloud.com/aychloe" class="square">Soundcloud</a>
+
+<a target="_blank" href="http://www.last.fm" class="square">Last.fm</a>
+
+<a target="_blank" href="https://www.codecademy.com" class="square">Codecademy</a>
+
+<a target="_blank" href="https://alpha.wallhaven.cc" class="square">WallHaven</a>
+
+<a target="_blank" href="http://w3schools.com" class="square">W3</a>
+
+</div>	<!-- close next -->
+
+<script>
+function change() {
+        var img = document.getElementById('changeimg').src;
+        if (img.indexOf('music.png')!=-1) {
+            document.getElementById('changeimg').src  = 'img/Pause.png';
+        }
+         else {
+           document.getElementById('changeimg').src = 'img/music.png';
+       }
+     }
+</script>  
+
+      <!-- music -->
+<script>
+var music = document.getElementById("music");
+
+function togglePlay() {
+  return music.paused ? music.play() : music.pause();
+};      
+</script>
+
+      <!--  greeting -->
+
+<script>
+var thehours = new Date().getHours();
+  var themessage;
+  var user = ('User');
+  var morning = ('morning, ') + user;
+  var afternoon = ('afternoon, ') + user;
+  var evening = ('evening, ') + user;
+
+  if (thehours >= 0 && thehours < 12) {
+    themessage = morning; 
+
+  } else if (thehours >= 12 && thehours < 17) {
+    themessage = afternoon;
+
+  } else if (thehours >= 17 && thehours < 24) {
+    themessage = evening;
+  }
+
+  $('.greeting').append(themessage);
+</script>  
+
+<script>
+// smooth scrolling
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 800);
+      return false;
+    }
+  }
+});
+</script>
+
+<script>
+// stop link change
+
+//Grab your current Url
+    var url = window.location.toString();
+//Remove anchor from url using the split
+    url = url.split(“#”)[0];
+</script>  
+
+</body>
+</html>
