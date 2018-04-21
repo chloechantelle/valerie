@@ -1,7 +1,9 @@
 # Valerie
 Valerie is an atmospheric homepage that was inspired by multiple designs that featured full front page wallpapers and underlines used on specific letters. The startpage features an easily customizable greeting, search bar, music player and links. 
 
-![alt text](https://github.com/chloechantelle/valerie/blob/master/preview/valerie.gif "Valerie Preview")
+![alt text](https://github.com/chloechantelle/valerie/blob/master/previews/links.gif "Valerie Preview")
+
+![alt text](https://github.com/chloechantelle/valerie/blob/master/previews/search.gif "Valerie Preview")
 
 # Instructions
 <h3>Firefox</h3>
