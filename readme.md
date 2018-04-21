@@ -35,8 +35,11 @@ The greeting is time based, but can be changed to whatever you like.
 Change the greeting variables to your liking:
 
 `var user = ('Your Name');
+
   var morning = ('morning, ') + user;
+
   var afternoon = ('good afternoon, ') + user;
+  
   var evening = ('evenin!, ') + user;`
 
 <h3>Search</h3>
