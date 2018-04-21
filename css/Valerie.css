@@ -133,8 +133,10 @@ p {
 
 #next {
   background: var(--bg1);  
-  padding: 100px 120px 50px 70px;  
+  padding: 300px 120px 300px 70px;  
   text-align: center;
+  /*height: 100%;*/
+  /*width: 100%;*/
 }
 
 .square {
@@ -159,7 +161,12 @@ p {
 }              
 
 ::-webkit-input-placeholder {
-  opacity: 1;
+  opacity: 1;  
+  color: var(--text1);
+}
+
+input:focus {
+outline: none;
 }
 
 :-moz-placeholder {
